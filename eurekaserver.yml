@@ -9,17 +9,17 @@ eureka:
 server:
     port: 8090
 spring:
-    rabbitmq:
-        host: localhost
-        password: '{cipher}87dd3fd18f40f34aae66e2a03004cc5b67d9f36c1a8e8aee7beeb943caa238e3'
-        port: 5672
-        username: guest
+    #rabbitmq:
+        #host: localhost
+       # password: '{cipher}87dd3fd18f40f34aae66e2a03004cc5b67d9f36c1a8e8aee7beeb943caa238e3'
+        #port: 5672
+        #username: guest
     sleuth:
         sampler:
             percentage: 1
     zipkin:
         baseUrl: http://localhost:9411/
-        rabbitmq:
-            queue: zipkin
-        sender:
-            type: rabbit
+       # rabbitmq:
+           # queue: zipkin
+        #sender:
+            #type: rabbit
