@@ -11,7 +11,7 @@ info:
 spring:
     datasource:
         password: '{cipher}c6f5efdeb26b003bfdb8608d9db613d5cfa2d870df3ceeaec64c77a64ecb992f'
-        url: jdbc:mysql://mysqldb/bankaccounts?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://localhost/bankaccounts?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
         username: '{cipher}c6f5efdeb26b003bfdb8608d9db613d5cfa2d870df3ceeaec64c77a64ecb992f'
     jpa:
         databasePlatform: org.hibernate.dialect.MySQL5InnoDBDialect
