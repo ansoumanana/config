@@ -25,7 +25,7 @@ spring:
         sampler:
             percentage: 1
     zipkin:
-        baseUrl: http://zipkin:9411/
+        baseUrl: http://localhost:9411/
           #rabbitmq:
           # queue: zipkin
           #sender:
@@ -52,4 +52,4 @@ eureka :
 
 
         serviceUrl:
-            defaultZone: http://eurekaserver:8090/eureka/
+            defaultZone: http://localhost:8090/eureka/
