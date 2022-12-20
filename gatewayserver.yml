@@ -44,7 +44,7 @@ spring:
                         clientSecret: NFJFGGL4Fm6bWoc0FKhhS7dOUua2Yncx
                         authorizationGrantType: authorization_code
                         #redirectUri: '{baseUrl}/login/oauth2/code/keycloak'
-                        redirectUri: http://127.0.0.1:8080/login/oauth2/code/keycloak
+                        redirectUri: http://gatewayserver:8091/login/oauth2/code/keycloak
     logging:
         level:
             org:
