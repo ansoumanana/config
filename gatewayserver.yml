@@ -24,6 +24,32 @@ spring:
             #queue: zipkin
         #sender:
            # type: rabbit
+    security:
+        oauth2:
+            client:
+                provider:
+                    keycloack:
+                        tokenUri: http://localhost:8080/realms/master/protocol/openid-connect/token
+                        authorizationUri: http://localhost:8080/realms/master/protocol/openid-connect/auth
+                        userInfoUri: http://localhost:8080/realms/master/protocol/openid-connect/userinfo
+                        userNameAttribute: preferred_username
+                registration:
+                    banksystem-gateway:
+                        scope:
+                            - openid
+                            - email
+                            - profile
+                        provider: keycloack
+                        clientId: banksystemgatewayui
+                        clientSecret: NFJFGGL4Fm6bWoc0FKhhS7dOUua2Yncx
+                        authorizationGrantType: authorization_code
+                        #redirectUri: '{baseUrl}/login/oauth2/code/keycloak'
+                        redirectUri: http://127.0.0.1:8080/login/oauth2/code/keycloak
+    logging:
+        level:
+            org:
+                springframework:
+                    security: DEBUG
 management:
     endpoint:
         shutdown:
