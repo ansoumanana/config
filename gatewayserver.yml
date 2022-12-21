@@ -35,13 +35,9 @@ spring:
                         userNameAttribute: preferred_username
                 registration:
                     banksystem-gateway:
-                        scope:
-                            - openid
-                            - email
-                            - profile
                         provider: keycloack
                         clientId: banksystemgatewayui
-                        clientSecret: NFJFGGL4Fm6bWoc0FKhhS7dOUua2Yncx
+                        clientSecret: xE1EGdqNAXPPxzjtd8nXFsnIInRw4VX2
                         authorizationGrantType: authorization_code
                         redirectUri: '{baseUrl}/login/oauth2/code/keycloak'
                         #redirectUri: http://gatewayserver:8091/login/oauth2/code/keycloak
