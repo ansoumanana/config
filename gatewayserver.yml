@@ -39,7 +39,7 @@ spring:
                         clientId: banksystemgatewayui
                         clientSecret: xE1EGdqNAXPPxzjtd8nXFsnIInRw4VX2
                         authorizationGrantType: authorization_code
-                        redirectUri: '{baseUrl}/login/oauth2/code/keycloak'
+                        redirectUri: http://127.0.0.1:8091/login/oauth2/code/keycloak
                         #redirectUri: http://gatewayserver:8091/login/oauth2/code/keycloak
     logging:
         level:
