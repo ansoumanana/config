@@ -24,11 +24,6 @@ spring:
             #queue: zipkin
         #sender:
            # type: rabbit
-    logging:
-        level:
-            org:
-                springframework:
-                    security: DEBUG
 management:
     endpoint:
         shutdown:
